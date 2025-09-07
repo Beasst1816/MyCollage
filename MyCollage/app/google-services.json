@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "190789893789",
+    "project_id": "mycollage-3a038",
+    "storage_bucket": "mycollage-3a038.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190789893789:android:fa4269ee4db748f9edde74",
+        "android_client_info": {
+          "package_name": "com.mycollage"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDv0syv4DZpeZp97wZSZFCPVH7r9O_913E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

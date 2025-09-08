@@ -1,6 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:backgroundTint="#100F10"
+    android:backgroundTintMode="add"
+    tools:context=".MainActivity">
 
-</LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="357dp"
+        android:layout_height="470dp"
+        android:background="@drawable/loginscreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498">
+
+        <EditText
+            android:id="@+id/studentElogin"
+            android:layout_width="292dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="63dp"
+            android:layout_marginBottom="38dp"
+            android:background="@drawable/buttonshape"
+            android:ems="10"
+            android:hint="EnterEmail"
+            android:inputType="textEmailAddress"
+            android:textAlignment="textStart"
+            android:textColorHint="#9C9B9B"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/textView11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="Email"
+            android:textColor="#FDFCFC"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/studentElogin"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StudentID"
+            android:textColor="#FAF8F8"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/studentIDlogin"
+            app:layout_constraintStart_toStartOf="@+id/studentIDlogin"
+            app:layout_constraintTop_toBottomOf="@+id/studentElogin" />
+
+        <EditText
+            android:id="@+id/studentIDlogin"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/buttonshape"
+            android:ems="10"
+            android:hint="Enter YourID"
+            android:inputType="text"
+            android:textAlignment="textStart"
+            android:textColorHint="#9C9A9A"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/textView12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <EditText
+            android:id="@+id/studentPASSlogin"
+            android:layout_width="292dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/buttonshape"
+            android:ems="10"
+            android:hint="EnterPassWord"
+            android:inputType="numberPassword"
+            android:textAlignment="textStart"
+            android:textColorHint="#8C8A8A"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="272dp"
+            android:layout_marginEnd="258dp"
+            android:layout_marginBottom="96dp"
+            android:text="Password"
+            android:textColor="#FDFDFD"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="288dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/buttonshape"
+            app:backgroundTint="@drawable/buttonsbackgroundcolor"
+            android:text="Login"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="66dp"
+        android:text="Student Login"
+        android:textColor="#FFFEFE"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginBottom="13dp"
+        android:text="Access your digitalLocker"
+        android:textColor="#A5A2A2"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

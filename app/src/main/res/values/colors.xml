@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="blue">3949ABFF</color>
+    <color name="white">#1D1C1C</color>
+    <color name="grey">#FF808080</color>
+    <color name="blue">#3949ABFF</color>
+    <color name="b">#201F1FFF</color>
+
+<!--    primary brand colors -->
+    <color name="mainbackgroundcolor">#121212</color>
+    <color name="textcolors">#ffffff</color>
+    <color name="acsentred">#E91429</color>
+    <color name="primaryblue">#2196f3</color>
+
+<!--    ui component colors -->
+<!--    background shades -->
+    <color name="mainbackground">#121212</color>
+    <color name="cardbackground">#1e1e1e</color>
+    <color name="mutedbackground">#2a2a2a</color>
+    <color name="inputbackground">#2a2a2a</color>
+    <color name="secondarybackground">#333333</color>
+    
+<!--    text colors -->
+    <color name="primarytext">#ffffff</color>
+    <color name="mutedtext">#b0b0b0</color>
+    <color name="allforegroundtext">#ffffff</color>
+
+<!--  interactiveelement -->
+    <color name="primarybuttons">#2196f3</color>
+    <color name="AccsentHighlight">#E91429</color>
+    <color name="borders">#333333</color>
+    <color name="switchbackground">#555555</color>
+    <color name="focusring">#2196f3</color>
+
+<!--    status / feedback -->
+
+    <color name="destructiveerror">#E91429</color>
+    <color name="succses">#2196f3</color>
+
+<!--    chart colors(okich format) -->
+    <color name="chart1">oklch(0.646 0.222 41.116)</color>
+    <color name="chart2">oklch(0.6 0.118 184.704)</color>
+    <color name="chart3">oklch(0.398 0.07 227.392)</color>
+    <color name="chart4">oklch(0.828 0.189 84.429)</color>
+    <color name="chart5">oklch(0.769 0.188 70.08)</color>
+
+
+
+
+
+
+
+    
+
+
 </resources>

@@ -31,6 +31,31 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+        studentLoginBtn.setOnClickListener(v -> {
+            // TODO: Implement student login functionality
+        });
+
+        adminLoginBtn.setOnClickListener(v -> {
+            // TODO: Implement admin login functionality
+        });
+
+        guardLoginBtn.setOnClickListener(v -> {
+            // TODO: Implement guard login functionality
+        });
+
+        studentRegisterBtn.setOnClickListener(v -> {
+            // TODO: Implement student registration functionality
+        });
+
+        adminRegisterBtn.setOnClickListener(v -> {
+            // TODO: Implement
+        });
+        guardRegisterBtn.setOnClickListener(v -> {
+            // TODO: Implement guard registration functionality
+        });
+
+
+
 
 
 

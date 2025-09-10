@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.mycollege"
-    compileSdk = 34  // Change from 36 to 34
+    compileSdk = 36  // Change from 36 to 34
 
     defaultConfig {
         applicationId = "com.mycollege"
-        minSdk = 21
-        targetSdk = 34  // Change from 36 to 34
+        minSdk = 23
+        targetSdk = 36  // Change from 36 to 34
         versionCode = 1
         versionName = "1.0"
 

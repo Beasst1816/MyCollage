@@ -38,11 +38,11 @@
     <color name="succses">#2196f3</color>
 
 <!--    chart colors(okich format) -->
-    <color name="chart1">oklch(0.646 0.222 41.116)</color>
-    <color name="chart2">oklch(0.6 0.118 184.704)</color>
-    <color name="chart3">oklch(0.398 0.07 227.392)</color>
-    <color name="chart4">oklch(0.828 0.189 84.429)</color>
-    <color name="chart5">oklch(0.769 0.188 70.08)</color>
+<!--    <color name="chart1">oklch(0.646 0.222 41.116)</color>-->
+<!--    <color name="chart2">oklch(0.6 0.118 184.704)</color>-->
+<!--    <color name="chart3">oklch(0.398 0.07 227.392)</color>-->
+<!--    <color name="chart4">oklch(0.828 0.189 84.429)</color>-->
+<!--    <color name="chart5">oklch(0.769 0.188 70.08)</color>-->
 
 
 

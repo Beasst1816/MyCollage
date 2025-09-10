@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCollage">
         <activity
-            android:name=".StudentMainActivity"
+            android:name=".StudentLoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

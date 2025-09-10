@@ -2,6 +2,7 @@ package com.mycollege;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,33 +34,31 @@ public class MainActivity extends AppCompatActivity {
 
         studentLoginBtn.setOnClickListener(v -> {
             // TODO: Implement student login functionality
+            Toast.makeText(MainActivity.this,"Student Login Comming Soon",Toast.LENGTH_SHORT).show();
         });
 
         adminLoginBtn.setOnClickListener(v -> {
             // TODO: Implement admin login functionality
+            Toast.makeText(MainActivity.this,"Admin Login Comming Soon",Toast.LENGTH_SHORT).show();
         });
 
         guardLoginBtn.setOnClickListener(v -> {
             // TODO: Implement guard login functionality
+            Toast.makeText(MainActivity.this,"Guard Login Comming Soon",Toast.LENGTH_SHORT).show();
         });
 
         studentRegisterBtn.setOnClickListener(v -> {
             // TODO: Implement student registration functionality
+            Toast.makeText(MainActivity.this,"Student Registration Comming Soon",Toast.LENGTH_SHORT).show();
         });
 
         adminRegisterBtn.setOnClickListener(v -> {
-            // TODO: Implement
+            // TODO: Implement admin registration functionality
+            Toast.makeText(MainActivity.this,"Admin Registration Comming Soon",Toast.LENGTH_SHORT).show();
         });
         guardRegisterBtn.setOnClickListener(v -> {
             // TODO: Implement guard registration functionality
+            Toast.makeText(MainActivity.this,"Guard Registration Comming Soon",Toast.LENGTH_SHORT).show();
         });
-
-
-
-
-
-
-
-
     }
 }

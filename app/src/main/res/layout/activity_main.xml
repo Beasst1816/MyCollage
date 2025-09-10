@@ -8,13 +8,20 @@
     android:background="@color/mainbackgroundcolor"
     tools:context=".MainActivity">
 
-    <!-- App Logo and Title -->
+    <!-- App Logo -->
+    <!--  Titel -->
+
+    <!--tagline-->
+
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="37dp"
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="21dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -24,22 +31,19 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:text="MyCollege"
         android:textColor="#FBFBFB"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
-        app:layout_constraintEnd_toStartOf="@+id/textViewLocker"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.285"
+        tools:layout_editor_absoluteX="171dp" />
 
-    <!-- Subtitle -->
-
-    <!-- Student Section -->
+    <!--student card-->
 
     <TextView
-        android:id="@+id/textViewLocker"
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Locker"
@@ -48,271 +52,243 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="Your Digital College Companion"
         android:textColor="#F8F7F7"
-        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout5"
+        android:id="@+id/studentCard"
         android:layout_width="0dp"
-        android:layout_height="137dp"
+        android:layout_height="120dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/buttonshape"
+        android:background="@drawable/buttontemplate"
         android:backgroundTint="@color/cardbackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7">
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
 
         <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="63dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:id="@+id/studentIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/graduate_cap_svgrepo_com" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/studentTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
             android:text="Student"
             android:textColor="#F8F5F5"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageView4"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@+id/studentIcon"
+            app:layout_constraintTop_toTopOf="@id/studentIcon" />
 
         <TextView
-            android:id="@+id/textView6"
-            android:layout_width="wrap_content"
+            android:id="@+id/studentDesc"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
             android:text="Access Your Records And Documents"
             android:textColor="#B4B2B2"
             android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/textView5"
-            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/studentTitle"
+            app:layout_constraintTop_toBottomOf="@+id/studentTitle" />
 
         <Button
             android:id="@+id/studentLoginBtn"
             android:layout_width="0dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_height="36dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="16dp"
             android:background="@drawable/buttonshape"
             app:backgroundTint="@drawable/buttonsbackgroundcolor"
             android:text="Login"
-            android:textColorLink="#F63131"
-            android:textSize="16sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/studentRegisterBtn"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView4"
-            app:rippleColor="#FA3939" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/studentRegisterBtn"
             android:layout_width="0dp"
-            android:layout_height="48dp"
+            android:layout_height="36dp"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="16dp"
             android:background="@drawable/buttonshape"
             android:text="Register"
-            android:textSize="16sp"
+            android:textSize="14sp"
             app:backgroundTint="@color/primarybuttons"
-            app:layout_constraintBottom_toBottomOf="@+id/studentLoginBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/studentLoginBtn"
-            app:layout_constraintTop_toTopOf="@+id/studentLoginBtn" />
+            app:layout_constraintStart_toEndOf="@+id/studentLoginBtn" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Admin Section -->
-
-    <!-- Guard Section -->
+    <!-- Admin Card -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout4"
+        android:id="@+id/adminCard"
         android:layout_width="0dp"
-        android:layout_height="137dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/buttonshape"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttontemplate"
         android:backgroundTint="@color/cardbackground"
+        android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
+        app:layout_constraintTop_toBottomOf="@+id/studentCard">
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="63dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:id="@+id/adminIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/user_admin_svgrepo_com" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/adminTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
             android:text="Admin"
             android:textColor="#F8F5F5"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageView2"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@+id/adminIcon"
+            app:layout_constraintTop_toTopOf="@id/adminIcon" />
 
         <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
+            android:id="@+id/adminDesc"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
             android:text="Manage Student And Records"
             android:textColor="#B4B2B2"
             android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/textView3"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/adminTitle"
+            app:layout_constraintTop_toBottomOf="@+id/adminTitle" />
 
         <Button
             android:id="@+id/adminLoginBtn"
             android:layout_width="0dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_height="36dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="16dp"
             android:background="@drawable/buttonshape"
             app:backgroundTint="@drawable/buttonsbackgroundcolor"
             android:text="Login"
-            android:textSize="16sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/adminRegisterBtn"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/adminRegisterBtn"
             android:layout_width="0dp"
-            android:layout_height="48dp"
+            android:layout_height="36dp"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="16dp"
             android:background="@drawable/buttonshape"
             android:text="Register"
-            android:textSize="16sp"
+            android:textSize="14sp"
             app:backgroundTint="@color/primarybuttons"
-            app:layout_constraintBottom_toBottomOf="@+id/adminLoginBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/adminLoginBtn"
-            app:layout_constraintTop_toTopOf="@+id/adminLoginBtn" />
+            app:layout_constraintStart_toEndOf="@+id/adminLoginBtn"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+<!--    Guard Card -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout6"
         android:layout_width="0dp"
-        android:layout_height="137dp"
-        android:layout_marginStart="16dp"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="32dp"
-        android:background="@drawable/buttonshape"
+        android:background="@drawable/buttontemplate"
         android:backgroundTint="@color/cardbackground"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:padding="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
-        app:layout_constraintVertical_bias="0.204">
+        app:layout_constraintTop_toBottomOf="@+id/adminCard">
 
         <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="63dp"
-            android:layout_height="45dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:id="@+id/guardIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/guard_protection_safe_2_svgrepo_com" />
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/guardTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
             android:text="Guard"
             android:textColor="#F8F5F5"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/imageView1"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@+id/guardIcon"
+            app:layout_constraintTop_toTopOf="@id/guardIcon" />
 
         <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:id="@+id/guardDesc"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
             android:text="Verify Student Identity"
             android:textColor="#B4B2B2"
             android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="@+id/textView1"
-            app:layout_constraintTop_toBottomOf="@+id/textView1" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guardTitle"
+            app:layout_constraintTop_toBottomOf="@+id/guardTitle" />
 
         <Button
             android:id="@+id/guardLoginBtn"
             android:layout_width="0dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_height="36dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="16dp"
             android:background="@drawable/buttonshape"
             app:backgroundTint="@drawable/buttonsbackgroundcolor"
             android:text="Login"
-            android:textSize="16sp"
+            android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guardRegisterBtn"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/guardRegisterBtn"
             android:layout_width="0dp"
-            android:layout_height="48dp"
+            android:layout_height="36dp"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="16dp"
             android:background="@drawable/buttonshape"
             android:text="Register"
-            android:textSize="16sp"
+            android:textSize="14sp"
             app:backgroundTint="@color/primarybuttons"
-            app:layout_constraintBottom_toBottomOf="@+id/guardLoginBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/guardLoginBtn"
-            app:layout_constraintTop_toTopOf="@+id/guardLoginBtn" />
+            app:layout_constraintStart_toEndOf="@+id/guardLoginBtn" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

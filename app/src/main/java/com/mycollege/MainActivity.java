@@ -1,5 +1,6 @@
 package com.mycollege;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.Toast;
@@ -31,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
         studentLoginBtn.setOnClickListener(v -> {
             // TODO: Implement student login functionality
-            Toast.makeText(MainActivity.this,"Student Login Comming Soon",Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, StudentLoginActivity.class );
+            startActivity(intent);
         });
 
         adminLoginBtn.setOnClickListener(v -> {
@@ -60,5 +61,7 @@ public class MainActivity extends AppCompatActivity {
             // TODO: Implement guard registration functionality
             Toast.makeText(MainActivity.this,"Guard Registration Comming Soon",Toast.LENGTH_SHORT).show();
         });
+
+
     }
 }
